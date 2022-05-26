@@ -8,6 +8,19 @@
     <title>Video one</title>
   </head>
   <body>
-    <video src="./videos/Beschinstvo.mp4" autoplay loop></video>
+    <img src="./sound.png" alt="" />
+    <video id="video" autoplay muted loop>
+      <source src="Beschinstvo.mp4" type="video/mp4" />
+    </video>
   </body>
+
+  <script>
+    let sound = document.querySelector("img");
+    let video = document.querySelector("video");
+
+    sound.addEventListener("click", () => {
+      video.muted = !video.muted;
+      sound.style.display = "none";
+    });
+  </script>
 </html>
