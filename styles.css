@@ -20,9 +20,8 @@ img {
   position: fixed;
   top: 15px;
   right: 15px;
-  width: 40px;
+  width: 95px;
   height: auto;
   z-index: 1000;
   cursor: pointer;
-  filter: brightness(0) invert(1);
 }
